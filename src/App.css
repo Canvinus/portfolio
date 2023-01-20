@@ -1,0 +1,130 @@
+html *
+{
+  font-family: Courier,Courier New,Lucida Sans Typewriter,Lucida Typewriter,monospace;
+  font-size: 15px;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  background-size: 80%;
+  background-attachment: fixed;
+  overflow: hidden;
+}
+
+header {
+  text-align: center;
+  display: flex;
+  margin: auto;
+}
+
+.socials{
+  display: flex;
+  margin: auto;
+  flex-direction: row;
+}
+
+.socials > .github-logo {
+  margin: auto;
+}
+
+.socials > .mail-logo {
+  margin: auto;
+  cursor: pointer;
+  margin-right: 5px;
+  filter: invert(.99);
+}
+
+.socials > .linked-in-logo {
+  margin: auto;
+  filter: invert(.99);
+}
+
+.socials > .telegram-logo {
+  margin: auto;
+  margin-right: 5px;
+  filter: invert(.99);
+}
+
+body {
+  color: #fff;
+  background-color: #000;
+  min-height: 90vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+::selection {
+  background-color: #f2f2f2;
+  color: #000;
+}
+
+footer {
+  background-color: #000;
+  text-transform: uppercase;
+  text-align: center;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+}
+
+.container {
+  display: flex;
+  flex-direction: row;
+}
+
+.me-container {
+  display: flex;
+  flex-direction: row;
+  margin: auto;
+}
+
+.me-img {
+  display: flex;
+  margin: auto;
+}
+
+.me-container > .cv-download {
+  display: flex;
+  margin: auto;
+  padding-bottom: 5vh;
+  filter: invert(.99);
+}
+
+nav {
+  text-transform: uppercase;
+  margin: auto;
+  width: 100%;
+  display: inline-block;
+  text-align: center;
+}
+
+@keyframes slide-in-col {
+  0% {
+    transform: translateY(-1000px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+.content {
+  max-height: 90vh;
+  text-transform: none;
+  animation: slide-in-col 0.7s both;
+  margin: auto;
+  width: 100%;
+  height: 100vh;
+  overflow-y: visible;
+  display: inline-block;
+}
+
+h1 {
+  text-transform: uppercase;
+  text-align: center;
+}
+
+h2 {
+  text-transform: uppercase;
+}
