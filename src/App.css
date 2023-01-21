@@ -9,6 +9,18 @@ html *
   overflow: hidden;
 }
 
+body {
+  color: #fff;
+  background-color: #000;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+::selection {
+  background-color: #f2f2f2;
+  color: #000;
+}
+
 header {
   text-align: center;
   display: flex;
@@ -43,20 +55,12 @@ header {
   filter: invert(.99);
 }
 
-body {
-  color: #fff;
-  background-color: #000;
+.main-container {
+  margin: auto;
   min-height: 90vh;
   display: flex;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-::selection {
-  background-color: #f2f2f2;
-  color: #000;
 }
 
 footer {
@@ -115,6 +119,7 @@ nav {
 
 .content {
   max-height: 90vh;
+  min-width: 50vw;
   text-transform: none;
   animation: slide-in-col 0.7s both;
   margin: auto;

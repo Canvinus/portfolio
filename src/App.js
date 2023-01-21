@@ -8,9 +8,9 @@ function App() {
       <header>
         <Socials />
       </header>
-      <body>
+      <div className='main-container'>
         <Navbar />
-      </body>
+      </div>
       <footer>
         <p>Copyright © {new Date().getFullYear()} agruz.dev</p>
       </footer>
