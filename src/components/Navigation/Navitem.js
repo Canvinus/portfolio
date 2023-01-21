@@ -30,11 +30,11 @@ export const Navitem = ({ onClick, value, selected }) => {
     }, [selected]);
 
     return (
-        <h1 
+        <div className='navitem-title' 
             style={textStyle}
             onMouseEnter={handleMouseEnter}
             onMouseLeave={handleMouseLeave}
             onClick={onClick}
-        >{value}</h1>
+        >{value}</div>
     );
 }
