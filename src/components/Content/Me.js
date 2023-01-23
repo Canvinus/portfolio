@@ -7,7 +7,7 @@ import { SocialLogo } from '../Socials/SocialLogo';
 export const Me = () => {
     
     return (
-        <div className='content'>
+        <div>
             <h1>Andrey Gruzdev</h1>
             <img className='me-img' style={{ width: '26.5vh', height: '17.7vh' }} src={myPhoto} alt='me'></img>
             <h2>Summary</h2>

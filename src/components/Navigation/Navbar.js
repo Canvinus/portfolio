@@ -3,6 +3,12 @@ import { Navitem } from './Navitem';
 import { Me } from '../Content/Me';
 import { Projects } from '../Content/Projects';
 import { Video } from '../VideoPlayer/Video';
+import { useEventListener } from '../hooks/useEventListener';
+
+const navItems = [
+    'Me',
+    'Projects',
+];
 
 export const Navbar = () => {
     const [selected, setSelected] = useState('');
@@ -18,16 +24,31 @@ export const Navbar = () => {
         
     }, [selected]);
     
+    const handler = ({ key }) => {
+        console.log((key));
+        if (selected !== '') {
+            return;
+        }
+        if (key === 'ArrowDown'){
+            
+        }
+        if (key === 'ArrowUp'){
+
+        }
+    }
+    useEventListener('keydown', handler);
+    
     return (
         <div className='container'>
             <nav>
-                <Navitem value='Me' onClick={handleClick} selected={selected}/>
-                <Navitem value='Projects' onClick={handleClick} selected={selected} />
-                <Navitem value='Karlik' onClick={handleClick} selected={selected} />
+                {navItems.map((navitem) => 
+                    <Navitem key={navitem} value={navitem} onClick={handleClick} selected={selected}/>
+                )}
             </nav>
-            {selected === 'Me' &&  <Me />}
-            {selected === 'Projects' &&  <Projects />}
-            {selected === 'Karlik' &&  <Video src={'https://www.youtube.com/embed/URktzj-BTw0?autoplay=1'}/>}
+            {selected !== '' && <div className='content'>
+                {selected === navItems[0] &&  <Me /> }
+                {selected === navItems[1] &&  <Projects />}
+            </div>}
         </div>
     );
 }

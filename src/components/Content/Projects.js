@@ -18,7 +18,7 @@ const myProjects = [
 export const Projects = () => {
     
     return (
-        <div className='content'>
+        <div>
             {myProjects.map((project) => 
                 <div key={project.title}>
                     <h1 style={{ textAlign: 'center' }}>{project.title}</h1>
