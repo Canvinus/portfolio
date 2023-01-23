@@ -25,7 +25,6 @@ export const Navbar = () => {
     }, [selected]);
     
     const handler = ({ key }) => {
-        console.log((key));
         if (selected !== '') {
             return;
         }
