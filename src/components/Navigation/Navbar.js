@@ -4,6 +4,7 @@ import { Me } from '../Content/Me';
 import { Projects } from '../Content/Projects';
 import { Video } from '../VideoPlayer/Video';
 import { useEventListener } from '../hooks/useEventListener';
+import { Space } from '../Utility/Space';
 
 const navItems = [
     'Me',
@@ -47,6 +48,7 @@ export const Navbar = () => {
             {selected !== '' && <div className='content'>
                 {selected === navItems[0] &&  <Me /> }
                 {selected === navItems[1] &&  <Projects />}
+                <Space />
             </div>}
         </div>
     );

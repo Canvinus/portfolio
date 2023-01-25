@@ -130,6 +130,12 @@ nav {
   display: inline-block;
 }
 
+.space {
+  margin: auto;
+  width: 10vw;
+  height: 10vh;
+}
+
 h1 {
   text-transform: uppercase;
   text-align: center;
