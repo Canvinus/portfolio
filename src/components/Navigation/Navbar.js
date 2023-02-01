@@ -3,7 +3,7 @@ import { Navitem } from './Navitem';
 import { Me } from '../Content/Me';
 import { Projects } from '../Content/Projects';
 import { Video } from '../VideoPlayer/Video';
-import { useEventListener } from '../hooks/useEventListener';
+import { useEventListener } from '../../hooks/useEventListener';
 import { Space } from '../Utility/Space';
 
 const navItems = [

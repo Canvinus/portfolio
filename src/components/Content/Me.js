@@ -1,10 +1,9 @@
 import 'react-tooltip/dist/react-tooltip.css';
-import myPhoto from '../../images/me.jpg';
-import cvLogo from '../../images/82d8fae54628df7af61f5c76da2d9d3f.svg';
+import myPhoto from '../../files/images/me.jpg';
+import cvLogo from '../../files/images/82d8fae54628df7af61f5c76da2d9d3f.svg';
 import cv from '../../files/Andrey_Gruzdev_CV.pdf';
 import { Tooltip as ReactTooltip } from "react-tooltip";
 import { SocialLogo } from '../Socials/SocialLogo';
-import { Space } from '../Utility/Space';
 
 export const Me = () => {
     

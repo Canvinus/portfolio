@@ -2,10 +2,10 @@ import 'react-tooltip/dist/react-tooltip.css';
 import { Tooltip as ReactTooltip } from "react-tooltip";
 import { SocialLogo } from './SocialLogo';
 import { Mail } from './Mail';
-import GithubLogo from '../../images/GitHub-Icon-White-Logo.wine.svg';
-import LinkedInLogo from '../../images/linkedin-svgrepo-com.svg';
-import TelegramLogo from '../../images/telegram-black-icon.svg';
-import MailLogo from '../../images/mail-213.svg';
+import GithubLogo from '../../files/images/GitHub-Icon-White-Logo.wine.svg';
+import LinkedInLogo from '../../files/images/linkedin-svgrepo-com.svg';
+import TelegramLogo from '../../files/images/telegram-black-icon.svg';
+import MailLogo from '../../files/images/mail-213.svg';
 
 export const Socials = () => {
     return (
