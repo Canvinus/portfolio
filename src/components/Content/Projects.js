@@ -1,7 +1,17 @@
 import { SwaggerPage } from '../Swagger/swaggerPage';
 import { ButtonLink } from '../Navigation/ButtonLink';
 
+import { SocialLogo } from '../Socials/SocialLogo';
+import GithubLogo from '../../files/images/GitHub-Icon-White-Logo.wine.svg';
+
 const myProjects = [
+    {
+        title: 'Cryptolio',
+        description: 'Display your ERC-20 tokens.',
+        stack: 'node.js, React, Moralis API',
+        github: 'https://github.com/Canvinus/cryptolio',
+        mvp: 'https://agruz.dev/cryptolio'
+    },
     {
         title: 'Multi-user chat',
         description: "Chat subsystem that can be integration into the different jitsi-meet project. The subsystem is using contacts and video-calls from the main system. The main functionality is to create private or group chats with moderation and chat in real-time. Also, this subsystem is creating the new chat for each new video meeting in the main system.",
@@ -30,13 +40,24 @@ export const Projects = () => {
                     <p>{project.description}</p>
                     <h2>Used stack</h2>
                     <p>{project.stack}</p>
-                    <div className='documentation-wrapper'>
+                    {project.swagger && <div className='documentation-wrapper'>
                         <SwaggerPage path={project.swagger}/>
-                        <div className='mvp-wrapper'>
-                            <h3>MVP: </h3>
-                            <ButtonLink text='Go' link={project.mvp}/>
-                        </div>
+                    </div>}
+                    <div className='mvp-wrapper'>
+                        <h3>MVP: </h3>
+                        <ButtonLink text='Go' link={project.mvp}/>
                     </div>
+                    {project.github && 
+                    <div className='github-project'>
+                        <h3>Github </h3>
+                        <SocialLogo 
+                            href={project.github}
+                            src={GithubLogo} alt='Github Logo' 
+                            width={32} 
+                            height={32}
+                            target='_blank'
+                        />
+                    </div>}
                 </div>
             )}
         </div>
