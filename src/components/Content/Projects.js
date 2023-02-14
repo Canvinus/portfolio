@@ -7,8 +7,8 @@ import GithubLogo from '../../files/images/GitHub-Icon-White-Logo.wine.svg';
 const myProjects = [
     {
         title: 'Cryptolio',
-        description: 'Display your ERC-20 tokens.',
-        stack: 'node.js, React, Moralis API',
+        description: "Display information about any Externally Owned Account on Ethereum Mainnet. It displays every ERC-20 token on an animated canvas, pie-chart of account's ERC-20 portfolio, also the total ETH balance and ERC-20 tokens balance. Use the Search Bar to lookup for any EOA on the eth network or connect your metamask wallet.",
+        stack: 'node.js, React',
         github: 'https://github.com/Canvinus/cryptolio',
         mvp: 'https://agruz.dev/cryptolio'
     },
