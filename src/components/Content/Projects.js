@@ -18,6 +18,7 @@ const myProjects = [
         photo: '',
         swagger: 'muchat-swagger.json',
         stack: 'ASP.NET Core, SignalR, Entity Framework (DB First), Oracle DB, swagger, JWT Auth',
+        github: 'https://github.com/Canvinus/muchat',
         mvp: 'https://muchat.infostrategic.com/web'
     },
     {
