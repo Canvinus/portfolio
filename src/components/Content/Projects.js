@@ -27,6 +27,7 @@ const myProjects = [
         photo: '',
         swagger: 'smartconf-swagger.json',
         stack: 'ASP.NET Core, Entity Framework (DB First), flask, selenium web driver, jitsi-meet, Oracle DB, swagger, JWT Auth',
+        github: 'https://github.com/Canvinus/smartconf',
         mvp: 'https://smartconf.infostrategic.com/web'
     }
 ]
