@@ -33,11 +33,11 @@ export const Me = () => {
                 <h3>Programming languages</h3>
                 <p>C#, C++, Python, SQL, JavaScript, TypeScript, Solidity</p>
                 <h3>Back-end stack</h3>
-                <p>ASP .NET Core, Entity Framework, SignalR, Flask, node.js</p>
+                <p>ASP .NET Core, Entity Framework, SignalR, Flask, node.js, RDBMS, redis, MongoDB</p>
                 <h3>Front-end stack</h3>
                 <p>React</p>
                 <h3>Other</h3>
-                <p>nginx, docker, git, DB architectures, swagger, JWT, OAuth, Selenium, Agile, Software design patterns, Documentation</p>
+                <p>nginx, docker, kubernetes, git, DB architectures, swagger, JWT, OAuth, OAuth 2.0, Identity Server, Selenium, Agile, Software design patterns, Documentation</p>
             </div>
             <div className='me-container'>
                 <SocialLogo className='cv-download' tooltip='Open CV' target='_blank' href={cv} src={cvLogo} alt='Download CV' width={40} height={40} />
