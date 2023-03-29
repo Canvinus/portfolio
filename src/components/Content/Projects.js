@@ -1,67 +1,102 @@
-import { SwaggerPage } from '../Swagger/swaggerPage';
-import { ButtonLink } from '../Navigation/ButtonLink';
+import { SwaggerPage } from '../Swagger/swaggerPage'
+import { ButtonLink } from '../Navigation/ButtonLink'
 
-import { SocialLogo } from '../Socials/SocialLogo';
-import GithubLogo from '../../files/images/GitHub-Icon-White-Logo.wine.svg';
+import { SocialLogo } from '../Socials/SocialLogo'
+import GithubLogo from '../../files/images/GitHub-Icon-White-Logo.wine.svg'
+import EthLogo from '../../files/images/eth_logo.png'
 
 const myProjects = [
-    {
-        title: 'Cryptolio',
-        description: "Display information about any Externally Owned Account on Ethereum Mainnet. It displays every ERC-20 token on an animated canvas, pie-chart of account's ERC-20 portfolio, also the total ETH balance and ERC-20 tokens balance. Use the Search Bar to lookup for any EOA on the eth network or connect your metamask wallet.",
-        stack: 'node.js, React',
-        github: 'https://github.com/Canvinus/cryptolio',
-        mvp: 'https://agruz.dev/cryptolio'
-    },
-    {
-        title: 'Multi-user chat',
-        description: "Chat subsystem that can be integration into the different jitsi-meet project. The subsystem is using contacts and video-calls from the main system. The main functionality is to create private or group chats with moderation and chat in real-time. Also, this subsystem is creating the new chat for each new video meeting in the main system.",
-        photo: '',
-        swagger: 'muchat-swagger.json',
-        stack: 'ASP.NET Core, SignalR, Entity Framework (DB First), Oracle DB, swagger, JWT Auth',
-        github: 'https://github.com/Canvinus/muchat',
-        mvp: 'https://muchat.infostrategic.com/web'
-    },
-    {
-        title: 'Student attendance monitoring service based on ML',
-        description: "Monitoring service created to validate if the real person is presented on the online meeting. The main functionality of the app is to schedule or join the meetings. Moderators have extended functionality which is: user moderation, live-time monitoring or generating report by the end of the meeting",
-        photo: '',
-        swagger: 'smartconf-swagger.json',
-        stack: 'ASP.NET Core, Entity Framework (DB First), flask, selenium web driver, jitsi-meet, Oracle DB, swagger, JWT Auth',
-        github: 'https://github.com/Canvinus/smartconf',
-        mvp: 'https://smartconf.infostrategic.com/web'
-    }
+  {
+    title: 'TimePact (Scaling Ethereum 2023)',
+    description:
+      'TimePact allows users to create secure time capsules containing specific data, with an expiration date, that can be unlocked using special NFTs. These NFTs can be easily transferred between accounts and bridged to other blockchains.',
+    photo: '',
+    swagger: '',
+    stack:
+      'node.js (express), React, Next.js, wagmi, Ethers.js, IPFS, docker, nginx, Solidity, hardhat, foundry',
+    hack: 'https://ethglobal.com/showcase/timepact-1mof1',
+    github: 'https://github.com/Canvinus/TimePact',
+    mvp: 'https://timepact.xyz',
+  },
+  {
+    title: 'Cryptolio',
+    description:
+      "Display information about any Externally Owned Account on Ethereum Mainnet. It displays every ERC-20 token on an animated canvas, pie-chart of account's ERC-20 portfolio, also the total ETH balance and ERC-20 tokens balance. Use the Search Bar to lookup for any EOA on the eth network or connect your metamask wallet.",
+    stack: 'node.js (express), React',
+    github: 'https://github.com/Canvinus/cryptolio',
+    mvp: 'https://agruz.dev/cryptolio',
+  },
+  {
+    title: 'Multi-user chat',
+    description:
+      'Introducing a versatile chat subsystem designed to seamlessly integrate with various Jitsi-Meet projects. This powerful tool enhances the collaborative experience by enabling smooth communication and instant messaging capabilities within the Jitsi-Meet ecosystem. With its user-friendly interface and robust functionality, the chat subsystem is the perfect addition to any Jitsi-Meet implementation. Join the conversation today and see how the chat subsystem can elevate your collaboration game!',
+    photo: '',
+    swagger: 'muchat-swagger.json',
+    stack:
+      'ASP.NET Core, SignalR, Entity Framework, Oracle DB, swagger, OAuth 2.0',
+    github: 'https://github.com/Canvinus/muchat',
+    mvp: 'https://muchat.infostrategic.com/web',
+  },
+  {
+    title: 'Student attendance monitoring service based on ML',
+    description:
+      'Introducing a cutting-edge monitoring service that utilizes powerful machine learning algorithms to ensure that only authentic individuals are present in your online meetings. With our app, you can effortlessly schedule or join meetings with ease. Our app also comes equipped with advanced moderator features that allow for seamless user moderation, real-time monitoring, and comprehensive report generation at the end of each meeting. You can trust our service to provide you with a secure and reliable online meeting experience.',
+    photo: '',
+    swagger: 'smartconf-swagger.json',
+    stack:
+      'ASP.NET Core, Entity Framework, flask, selenium web driver, jitsi-meet, Oracle DB, swagger, JWT Auth',
+    github: 'https://github.com/Canvinus/smartconf',
+    mvp: 'https://smartconf.infostrategic.com/web',
+  },
 ]
 
 export const Projects = () => {
-    return (
-        <div>
-            {myProjects.map((project) => 
-                <div className='project-wrapper' key={project.title}>
-                    <h1 style={{ textAlign: 'center' }}>{project.title}</h1>
-                    <h2>Description</h2>
-                    <p>{project.description}</p>
-                    <h2>Used stack</h2>
-                    <p>{project.stack}</p>
-                    {project.swagger && <div className='documentation-wrapper'>
-                        <SwaggerPage path={project.swagger}/>
-                    </div>}
-                    <div className='mvp-wrapper'>
-                        <h3>MVP: </h3>
-                        <ButtonLink text='Go' link={project.mvp}/>
-                    </div>
-                    {project.github && 
-                    <div className='github-project'>
-                        <h3>Github </h3>
-                        <SocialLogo 
-                            href={project.github}
-                            src={GithubLogo} alt='Github Logo' 
-                            width={32} 
-                            height={32}
-                            target='_blank'
-                        />
-                    </div>}
-                </div>
-            )}
+  return (
+    <div>
+      {myProjects.map((project) => (
+        <div className="project-wrapper" key={project.title}>
+          <h1 style={{ textAlign: 'center' }}>{project.title}</h1>
+          <h2>Description</h2>
+          <p className="project-description">{project.description}</p>
+          <h2>Used stack</h2>
+          <p>{project.stack}</p>
+          {project.swagger && (
+            <div className="documentation-wrapper">
+              <SwaggerPage path={project.swagger} />
+            </div>
+          )}
+          {project.hack && (
+            <div className="hackathon-project">
+              <h3 style={{ marginRight: 10 }}>Project Page: </h3>
+              <SocialLogo
+                href={project.hack}
+                src={EthLogo}
+                alt="Hack logo"
+                width={19}
+                height={32}
+                target="_blank"
+              />
+            </div>
+          )}
+          <div className="mvp-wrapper">
+            <h3>MVP: </h3>
+            <ButtonLink text="Go" link={project.mvp} />
+          </div>
+          {project.github && (
+            <div className="github-project">
+              <h3>Github </h3>
+              <SocialLogo
+                href={project.github}
+                src={GithubLogo}
+                alt="Github Logo"
+                width={32}
+                height={32}
+                target="_blank"
+              />
+            </div>
+          )}
         </div>
-    );
+      ))}
+    </div>
+  )
 }
