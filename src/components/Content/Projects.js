@@ -70,6 +70,11 @@ export const Projects = () => {
       {myProjects.map((project) => (
         <div className="project-wrapper" key={project.title}>
           <h1 style={{ textAlign: 'center' }}>{project.title}</h1>
+          {project.prize && (
+            <div className="hackathon-prize">
+              <h4>«{project.prize}»</h4>
+            </div>
+          )}
           <h2>Description</h2>
           <p className="project-description">{project.description}</p>
           <h2>Used stack</h2>

@@ -186,3 +186,9 @@ h4 {
   flex-direction: row;
   align-items: center;
 }
+
+.hackathon-prize {
+  display: flex;
+  justify-content: center;
+}
+
