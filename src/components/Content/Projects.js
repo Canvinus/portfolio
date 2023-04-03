@@ -7,14 +7,28 @@ import EthLogo from '../../files/images/eth_logo.png'
 
 const myProjects = [
   {
+    title: 'Warp Drive (EasyA x HBC 2023)',
+    description:
+      'Embark on a thrilling, cross-chain odyssey that pushes the boundaries of blockchain gaming and showcases the might of the Axelar Network! Prepare to wage war across four distinct blockchains, engaging in relentless combat for power and control in a game that is equal parts immersive, secure, and exhilarating. In this epochal struggle, only one chain shall reign supreme.',
+    photo: '',
+    swagger: '',
+    stack:
+      'axelar, moralis, node.js (express), React, Next.js, rainbowkit, wagmi, ethers.js, docker, nginx, hardhar, foundry',
+    hack: 'https://twitter.com/easya_app/status/1642623297052618752?s=46&t=wWGh6aBdBOA2phlNMj_ZFQ',
+    prize: '1st place by Axelar',
+    github: 'https://github.com/Canvinus/warp-drive',
+    mvp: 'https://wdrive.io',
+  },
+  {
     title: 'TimePact (Scaling Ethereum 2023)',
     description:
       'TimePact allows users to create secure time capsules containing specific data, with an expiration date, that can be unlocked using special NFTs. These NFTs can be easily transferred between accounts and bridged to other blockchains.',
     photo: '',
     swagger: '',
     stack:
-      'node.js (express), React, Next.js, wagmi, Ethers.js, IPFS, docker, nginx, Solidity, hardhat, foundry',
+      'node.js (express), React, Next.js, rainbowkit, wagmi, ethers.js, FEVM, IPFS, docker, nginx, hardhat, foundry',
     hack: 'https://ethglobal.com/showcase/timepact-1mof1',
+    prize: 'Best Primitives or Infra by FVM',
     github: 'https://github.com/Canvinus/TimePact',
     mvp: 'https://timepact.xyz',
   },
