@@ -33,6 +33,14 @@ const myProjects = [
     mvp: 'https://timepact.xyz',
   },
   {
+    title: 'Monkey Business',
+    description:
+      'The Infinite Monkey Theorem is a fascinating and thought-provoking concept in the realm of mathematics and probability theory. It posits that if a monkey were to randomly hit keys on a typewriter for an infinite amount of time, it would eventually produce a complete and perfect piece of literature, such as the works of Shakespeare. While the idea may seem far-fetched, it highlights the power of probability and the potential for rare events to occur given enough time.',
+    stack: 'React, Next, tailwind',
+    github: 'https://github.com/Canvinus/monkey-business',
+    mvp: 'https://agruz.dev/monkey-business',
+  },
+  {
     title: 'Cryptolio',
     description:
       "Display information about any Externally Owned Account on Ethereum Mainnet. It displays every ERC-20 token on an animated canvas, pie-chart of account's ERC-20 portfolio, also the total ETH balance and ERC-20 tokens balance. Use the Search Bar to lookup for any EOA on the eth network or connect your metamask wallet.",
